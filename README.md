@@ -31,8 +31,8 @@
   `networks/TCP`
   [Открыть папку](./networks/TCP/)
 - **Небольшой проект на python - Cryptographer/Decryptor**  
-  `python prac/project`
-  [Открыть папку](./python%20prac/project/)
+  `python prac/cryptographer-decryptor`
+  [Открыть папку](./python%20prac/cryptographer-decryptor/)
 - **Теория формальных языков - Earley Parser**  
   `formal languages/EarleyParser`
   [Открыть папку](./formal%20languages/EarleyParser/)
