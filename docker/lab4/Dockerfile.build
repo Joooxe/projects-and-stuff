@@ -1,0 +1,12 @@
+FROM gitfame-system AS build
+
+WORKDIR /src
+
+COPY go.mod go.sum ./
+RUN go mod download
+
+COPY gitfame/ .
+
+RUN go build -ldflags="-s -w" -o /gitfame ./cmd/gitfame
+
+

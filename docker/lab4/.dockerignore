@@ -1,0 +1,7 @@
+gitfame/test/
+gitfame/README.md
+*.md
+
+.git/
+.gitignore
+

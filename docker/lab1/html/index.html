@@ -1,0 +1,21 @@
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>nginxпобеда.рф</title>
+    <script>
+        const startTime = Date.now();
+
+        setInterval(() => {
+            const elapsedMs = Date.now() - startTime;
+            const seconds = Math.floor(elapsedMs / 1000);
+            document.getElementById("timer").textContent = seconds;
+        }, 1000);
+    </script>
+</head>
+<body>
+    <h1>nginxпобеда.рф</h1>
+    <p>Лаба 1 победа уже: <span id="timer">0</span> секунд.</p>
+    <img src="image.jpg"/>
+</body>
+</html>
+

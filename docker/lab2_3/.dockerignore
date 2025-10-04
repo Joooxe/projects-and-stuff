@@ -1,0 +1,12 @@
+venv/
+.venv/
+__pycache__/
+
+.git/
+.gitignore
+
+cars_driver_sample_data.sql
+cars_car_sample_data.sql
+README.md
+Dockerfile
+docker-compose.yml

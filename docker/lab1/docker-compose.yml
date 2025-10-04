@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+    mynginx:
+        build:  .
+        image: mynginx:latest
+        container_name: mynginx
+        ports:
+            - "8080:8069"
+        volumes:
+            - ./html:/usr/share/html
+            - ./nginx.conf:/etc/nginx/nginx.conf
+        restart: always
+

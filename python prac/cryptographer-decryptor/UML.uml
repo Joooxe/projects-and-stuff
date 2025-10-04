@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="UTF-8"?><uml:Model xmlns:uml="http://www.omg.org/spec/UML/20110701" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmi:version="2.1" xmi:id="_b1k-QOoQEe6ATMmk_xfHhw" name="UML">
+      
+    <eAnnotations xmi:id="_b1k-QeoQEe6ATMmk_xfHhw" source="Objing">
+            
+        <contents xmi:type="uml:Property" xmi:id="_b1k-QuoQEe6ATMmk_xfHhw" name="exporterVersion">
+                  
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_b1k-Q-oQEe6ATMmk_xfHhw" value="3.0.0"/>
+                
+        </contents>
+          
+    </eAnnotations>
+      
+    <packagedElement xmi:type="uml:Class" xmi:id="_b1k-ROoQEe6ATMmk_xfHhw" name="ConsoleUI">
+            
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_b1k-ReoQEe6ATMmk_xfHhw" name="cipher" visibility="public" type="_b1ll5OoQEe6ATMmk_xfHhw" isUnique="false" association="_b1k-TOoQEe6ATMmk_xfHhw"/>
+            
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_b1k-RuoQEe6ATMmk_xfHhw" name="imageProcessing" visibility="public" type="_b1llzeoQEe6ATMmk_xfHhw" isUnique="false" association="_b1k-TuoQEe6ATMmk_xfHhw"/>
+            
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_b1k-R-oQEe6ATMmk_xfHhw" name="InputString" visibility="public" isUnique="false">
+                  
+            <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                
+        </ownedAttribute>
+            
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_b1k-SOoQEe6ATMmk_xfHhw" name="InputImage" visibility="public" isUnique="false">
+                  
+            <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                
+        </ownedAttribute>
+            
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_b1k-SeoQEe6ATMmk_xfHhw" name="Run" visibility="public">
+                  
+            <ownedComment xmi:type="uml:Comment" xmi:id="_b1k-SuoQEe6ATMmk_xfHhw">
+                        
+                <body>&lt;Enter note text here&gt;</body>
+                      
+            </ownedComment>
+                
+        </ownedOperation>
+            
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_b1k-S-oQEe6ATMmk_xfHhw" name="ArgumentParser" visibility="public"/>
+          
+    </packagedElement>
+      
+    <packagedElement xmi:type="uml:Association" xmi:id="_b1k-TOoQEe6ATMmk_xfHhw" memberEnd="_b1k-ReoQEe6ATMmk_xfHhw _b1k-TeoQEe6ATMmk_xfHhw">
+            
+        <ownedEnd xmi:type="uml:Property" xmi:id="_b1k-TeoQEe6ATMmk_xfHhw" visibility="public" type="_b1k-ROoQEe6ATMmk_xfHhw" isUnique="false" association="_b1k-TOoQEe6ATMmk_xfHhw"/>
+          
+    </packagedElement>
+      
+    <packagedElement xmi:type="uml:Association" xmi:id="_b1k-TuoQEe6ATMmk_xfHhw" memberEnd="_b1k-RuoQEe6ATMmk_xfHhw _b1k-T-oQEe6ATMmk_xfHhw">
+            
+        <ownedEnd xmi:type="uml:Property" xmi:id="_b1k-T-oQEe6ATMmk_xfHhw" visibility="public" type="_b1k-ROoQEe6ATMmk_xfHhw" isUnique="false" association="_b1k-TuoQEe6ATMmk_xfHhw"/>
+          
+    </packagedElement>
+      
+    <packagedElement xmi:type="uml:Class" xmi:id="_b1k-UOoQEe6ATMmk_xfHhw" name="VigenereCipher">
+            
+        <generalization xmi:type="uml:Generalization" xmi:id="_b1k-UeoQEe6ATMmk_xfHhw" general="_b1ll5OoQEe6ATMmk_xfHhw"/>
+            
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_b1k-UuoQEe6ATMmk_xfHhw" name="Encrypt" visibility="public">
+                  
+            <ownedParameter xmi:id="_b1llUOoQEe6ATMmk_xfHhw" name="message" isUnique="false">
+                        
+                <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                        
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b1llUeoQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b1llUuoQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_b1llU-oQEe6ATMmk_xfHhw" value=""/>
+                      
+            </ownedParameter>
+                  
+            <ownedParameter xmi:id="_b1llVOoQEe6ATMmk_xfHhw" name=" key" isUnique="false">
+                        
+                <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                        
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b1llVeoQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b1llVuoQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_b1llV-oQEe6ATMmk_xfHhw" value=""/>
+                      
+            </ownedParameter>
+                  
+            <ownedParameter xmi:id="_b1llWOoQEe6ATMmk_xfHhw" isUnique="false" direction="return">
+                        
+                <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                        
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b1llWeoQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b1llWuoQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_b1llW-oQEe6ATMmk_xfHhw" value=""/>
+                      
+            </ownedParameter>
+                
+        </ownedOperation>
+            
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_b1llXOoQEe6ATMmk_xfHhw" name="Decrypt" visibility="public">
+                  
+            <ownedParameter xmi:id="_b1llXeoQEe6ATMmk_xfHhw" name="text" isUnique="false">
+                        
+                <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                        
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b1llXuoQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b1llX-oQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_b1llYOoQEe6ATMmk_xfHhw" value=""/>
+                      
+            </ownedParameter>
+                  
+            <ownedParameter xmi:id="_b1llYeoQEe6ATMmk_xfHhw" name="key" isUnique="false">
+                        
+                <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                        
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b1llYuoQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b1llY-oQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_b1llZOoQEe6ATMmk_xfHhw" value=""/>
+                      
+            </ownedParameter>
+                  
+            <ownedParameter xmi:id="_b1llZeoQEe6ATMmk_xfHhw" isUnique="false" direction="return">
+                        
+                <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                        
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b1llZuoQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b1llZ-oQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_b1llaOoQEe6ATMmk_xfHhw" value=""/>
+                      
+            </ownedParameter>
+                
+        </ownedOperation>
+          
+    </packagedElement>
+      
+    <packagedElement xmi:type="uml:Class" xmi:id="_b1llaeoQEe6ATMmk_xfHhw" name="CaesarCipher">
+            
+        <generalization xmi:type="uml:Generalization" xmi:id="_b1llauoQEe6ATMmk_xfHhw" general="_b1ll5OoQEe6ATMmk_xfHhw"/>
+            
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_b1lla-oQEe6ATMmk_xfHhw" name="Encrypt" visibility="public">
+                  
+            <ownedParameter xmi:id="_b1llbOoQEe6ATMmk_xfHhw" name="massage" isUnique="false">
+                        
+                <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                        
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b1llbeoQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b1llbuoQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_b1llb-oQEe6ATMmk_xfHhw" value=""/>
+                      
+            </ownedParameter>
+                  
+            <ownedParameter xmi:id="_b1llcOoQEe6ATMmk_xfHhw" name=" key" isUnique="false">
+                        
+                <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                        
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b1llceoQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b1llcuoQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_b1llc-oQEe6ATMmk_xfHhw" value=""/>
+                      
+            </ownedParameter>
+                  
+            <ownedParameter xmi:id="_b1lldOoQEe6ATMmk_xfHhw" isUnique="false" direction="return">
+                        
+                <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                        
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b1lldeoQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b1llduoQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_b1lld-oQEe6ATMmk_xfHhw" value=""/>
+                      
+            </ownedParameter>
+                
+        </ownedOperation>
+            
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_b1lleOoQEe6ATMmk_xfHhw" name="Decrypt" visibility="public">
+                  
+            <ownedParameter xmi:id="_b1lleeoQEe6ATMmk_xfHhw" name="text" isUnique="false">
+                        
+                <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                        
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b1lleuoQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b1lle-oQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_b1llfOoQEe6ATMmk_xfHhw" value=""/>
+                      
+            </ownedParameter>
+                  
+            <ownedParameter xmi:id="_b1llfeoQEe6ATMmk_xfHhw" name="key" isUnique="false">
+                        
+                <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                        
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b1llfuoQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b1llf-oQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_b1llgOoQEe6ATMmk_xfHhw" value=""/>
+                      
+            </ownedParameter>
+                  
+            <ownedParameter xmi:id="_b1llgeoQEe6ATMmk_xfHhw" isUnique="false" direction="return">
+                        
+                <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                        
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b1llguoQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b1llg-oQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_b1llhOoQEe6ATMmk_xfHhw" value=""/>
+                      
+            </ownedParameter>
+                
+        </ownedOperation>
+          
+    </packagedElement>
+      
+    <packagedElement xmi:type="uml:Class" xmi:id="_b1llheoQEe6ATMmk_xfHhw" name="VernamCipher">
+            
+        <generalization xmi:type="uml:Generalization" xmi:id="_b1llhuoQEe6ATMmk_xfHhw" general="_b1ll5OoQEe6ATMmk_xfHhw"/>
+            
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_b1llh-oQEe6ATMmk_xfHhw" name="Encrypt" visibility="public">
+                  
+            <ownedParameter xmi:id="_b1lliOoQEe6ATMmk_xfHhw" name="massage" isUnique="false">
+                        
+                <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                        
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b1llieoQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b1lliuoQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_b1lli-oQEe6ATMmk_xfHhw" value=""/>
+                      
+            </ownedParameter>
+                  
+            <ownedParameter xmi:id="_b1lljOoQEe6ATMmk_xfHhw" name="key" isUnique="false">
+                        
+                <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                        
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b1lljeoQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b1lljuoQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_b1llj-oQEe6ATMmk_xfHhw" value=""/>
+                      
+            </ownedParameter>
+                  
+            <ownedParameter xmi:id="_b1llkOoQEe6ATMmk_xfHhw" isUnique="false" direction="return">
+                        
+                <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                        
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b1llkeoQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b1llkuoQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_b1llk-oQEe6ATMmk_xfHhw" value=""/>
+                      
+            </ownedParameter>
+                
+        </ownedOperation>
+            
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_b1lllOoQEe6ATMmk_xfHhw" name="Decrypt" visibility="public">
+                  
+            <ownedParameter xmi:id="_b1llleoQEe6ATMmk_xfHhw" name="text" isUnique="false">
+                        
+                <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                        
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b1llluoQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b1lll-oQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_b1llmOoQEe6ATMmk_xfHhw" value=""/>
+                      
+            </ownedParameter>
+                  
+            <ownedParameter xmi:id="_b1llmeoQEe6ATMmk_xfHhw" name="key" isUnique="false">
+                        
+                <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                        
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b1llmuoQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b1llm-oQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_b1llnOoQEe6ATMmk_xfHhw" value=""/>
+                      
+            </ownedParameter>
+                  
+            <ownedParameter xmi:id="_b1llneoQEe6ATMmk_xfHhw" isUnique="false" direction="return">
+                        
+                <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                        
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b1llnuoQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b1lln-oQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_b1lloOoQEe6ATMmk_xfHhw" value=""/>
+                      
+            </ownedParameter>
+                
+        </ownedOperation>
+          
+    </packagedElement>
+      
+    <packagedElement xmi:type="uml:Class" xmi:id="_b1lloeoQEe6ATMmk_xfHhw" name="CaesarBypass">
+            
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_b1llouoQEe6ATMmk_xfHhw" name="text" visibility="public" isUnique="false">
+                  
+            <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                
+        </ownedAttribute>
+            
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_b1llo-oQEe6ATMmk_xfHhw" name="FrequencyAnalyzer"/>
+            
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_b1llpOoQEe6ATMmk_xfHhw" name="Breaker" visibility="public">
+                  
+            <ownedParameter xmi:id="_b1llpeoQEe6ATMmk_xfHhw" name="text" isUnique="false">
+                        
+                <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                        
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b1llpuoQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b1llp-oQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_b1llqOoQEe6ATMmk_xfHhw" value=""/>
+                      
+            </ownedParameter>
+                  
+            <ownedParameter xmi:id="_b1llqeoQEe6ATMmk_xfHhw" isUnique="false" direction="return">
+                        
+                <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                        
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b1llquoQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b1llq-oQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_b1llrOoQEe6ATMmk_xfHhw" value=""/>
+                      
+            </ownedParameter>
+                
+        </ownedOperation>
+          
+    </packagedElement>
+      
+    <packagedElement xmi:type="uml:Class" xmi:id="_b1llreoQEe6ATMmk_xfHhw" name="Steganography">
+            
+        <generalization xmi:type="uml:Generalization" xmi:id="_b1llruoQEe6ATMmk_xfHhw" general="_b1ll5OoQEe6ATMmk_xfHhw"/>
+            
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_b1llr-oQEe6ATMmk_xfHhw" name="Image" visibility="public" isUnique="false">
+                  
+            <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                
+        </ownedAttribute>
+            
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_b1llsOoQEe6ATMmk_xfHhw" name="ExtractText" visibility="public">
+                  
+            <ownedParameter xmi:id="_b1llseoQEe6ATMmk_xfHhw" name="image" isUnique="false">
+                        
+                <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                        
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b1llsuoQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b1lls-oQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_b1lltOoQEe6ATMmk_xfHhw" value=""/>
+                      
+            </ownedParameter>
+                  
+            <ownedParameter xmi:id="_b1llteoQEe6ATMmk_xfHhw" isUnique="false" direction="return">
+                        
+                <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                        
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b1lltuoQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b1llt-oQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_b1lluOoQEe6ATMmk_xfHhw" value=""/>
+                      
+            </ownedParameter>
+                
+        </ownedOperation>
+            
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_b1llueoQEe6ATMmk_xfHhw" name="EmbedText" visibility="public">
+                  
+            <ownedParameter xmi:id="_b1lluuoQEe6ATMmk_xfHhw" name="image" isUnique="false">
+                        
+                <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                        
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b1llu-oQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b1llvOoQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_b1llveoQEe6ATMmk_xfHhw" value=""/>
+                      
+            </ownedParameter>
+                  
+            <ownedParameter xmi:id="_b1llvuoQEe6ATMmk_xfHhw" name="text" isUnique="false">
+                        
+                <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                        
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b1llv-oQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b1llwOoQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_b1llweoQEe6ATMmk_xfHhw" value=""/>
+                      
+            </ownedParameter>
+                  
+            <ownedParameter xmi:id="_b1llwuoQEe6ATMmk_xfHhw" isUnique="false" direction="return">
+                        
+                <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                        
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b1llw-oQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b1llxOoQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_b1llxeoQEe6ATMmk_xfHhw" value=""/>
+                      
+            </ownedParameter>
+                
+        </ownedOperation>
+          
+    </packagedElement>
+      
+    <packagedElement xmi:type="uml:Association" xmi:id="_b1llxuoQEe6ATMmk_xfHhw" memberEnd="_b1llx-oQEe6ATMmk_xfHhw _b1llyeoQEe6ATMmk_xfHhw _b1lly-oQEe6ATMmk_xfHhw">
+            
+        <ownedEnd xmi:type="uml:Property" xmi:id="_b1llx-oQEe6ATMmk_xfHhw" visibility="public" type="_b1llreoQEe6ATMmk_xfHhw" isUnique="false" association="_b1llxuoQEe6ATMmk_xfHhw">
+                  
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b1llyOoQEe6ATMmk_xfHhw"/>
+                
+        </ownedEnd>
+            
+        <ownedEnd xmi:type="uml:Property" xmi:id="_b1llyeoQEe6ATMmk_xfHhw" visibility="public" type="_b1ll8uoQEe6ATMmk_xfHhw" isUnique="false" association="_b1llxuoQEe6ATMmk_xfHhw">
+                  
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b1llyuoQEe6ATMmk_xfHhw"/>
+                
+        </ownedEnd>
+            
+        <ownedEnd xmi:type="uml:Property" xmi:id="_b1lly-oQEe6ATMmk_xfHhw" visibility="public" type="_b1ll9OoQEe6ATMmk_xfHhw" isUnique="false" association="_b1llxuoQEe6ATMmk_xfHhw">
+                  
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b1llzOoQEe6ATMmk_xfHhw"/>
+                
+        </ownedEnd>
+          
+    </packagedElement>
+      
+    <packagedElement xmi:type="uml:Class" xmi:id="_b1llzeoQEe6ATMmk_xfHhw" name="ImageProcessing">
+            
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_b1llzuoQEe6ATMmk_xfHhw" name="img" visibility="public" type="_b1ll8uoQEe6ATMmk_xfHhw" isUnique="false" aggregation="composite" association="_b1ll4OoQEe6ATMmk_xfHhw">
+                  
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b1llz-oQEe6ATMmk_xfHhw"/>
+                
+        </ownedAttribute>
+            
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_b1ll0OoQEe6ATMmk_xfHhw" name="jpg" visibility="public" type="_b1ll9OoQEe6ATMmk_xfHhw" isUnique="false" aggregation="composite" association="_b1ll4uoQEe6ATMmk_xfHhw">
+                  
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b1ll0eoQEe6ATMmk_xfHhw"/>
+                
+        </ownedAttribute>
+            
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_b1ll0uoQEe6ATMmk_xfHhw" name="SaveImage" visibility="public">
+                  
+            <ownedParameter xmi:id="_b1ll0-oQEe6ATMmk_xfHhw" name="image" isUnique="false">
+                        
+                <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                        
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b1ll1OoQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b1ll1eoQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_b1ll1uoQEe6ATMmk_xfHhw" value=""/>
+                      
+            </ownedParameter>
+                  
+            <ownedParameter xmi:id="_b1ll1-oQEe6ATMmk_xfHhw" name="file_path" isUnique="false">
+                        
+                <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                        
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b1ll2OoQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b1ll2eoQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_b1ll2uoQEe6ATMmk_xfHhw" value=""/>
+                      
+            </ownedParameter>
+                
+        </ownedOperation>
+            
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_b1ll2-oQEe6ATMmk_xfHhw" name="GetImage" visibility="public">
+                  
+            <ownedParameter xmi:id="_b1ll3OoQEe6ATMmk_xfHhw" name="file_path" isUnique="false">
+                        
+                <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                        
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b1ll3eoQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b1ll3uoQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_b1ll3-oQEe6ATMmk_xfHhw" value=""/>
+                      
+            </ownedParameter>
+                
+        </ownedOperation>
+          
+    </packagedElement>
+      
+    <packagedElement xmi:type="uml:Association" xmi:id="_b1ll4OoQEe6ATMmk_xfHhw" memberEnd="_b1llzuoQEe6ATMmk_xfHhw _b1ll4eoQEe6ATMmk_xfHhw">
+            
+        <ownedEnd xmi:type="uml:Property" xmi:id="_b1ll4eoQEe6ATMmk_xfHhw" visibility="public" type="_b1llzeoQEe6ATMmk_xfHhw" isUnique="false" association="_b1ll4OoQEe6ATMmk_xfHhw"/>
+          
+    </packagedElement>
+      
+    <packagedElement xmi:type="uml:Association" xmi:id="_b1ll4uoQEe6ATMmk_xfHhw" memberEnd="_b1ll0OoQEe6ATMmk_xfHhw _b1ll4-oQEe6ATMmk_xfHhw">
+            
+        <ownedEnd xmi:type="uml:Property" xmi:id="_b1ll4-oQEe6ATMmk_xfHhw" visibility="public" type="_b1llzeoQEe6ATMmk_xfHhw" isUnique="false" association="_b1ll4uoQEe6ATMmk_xfHhw"/>
+          
+    </packagedElement>
+      
+    <packagedElement xmi:type="uml:Class" xmi:id="_b1ll5OoQEe6ATMmk_xfHhw" name="cipher" isAbstract="true">
+            
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_b1ll5eoQEe6ATMmk_xfHhw" name="caesarBypass" visibility="public" type="_b1lloeoQEe6ATMmk_xfHhw" isUnique="false" association="_b1ll8OoQEe6ATMmk_xfHhw"/>
+            
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_b1ll5uoQEe6ATMmk_xfHhw" name="text" visibility="public" isUnique="false">
+                  
+            <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                
+        </ownedAttribute>
+            
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_b1ll5-oQEe6ATMmk_xfHhw" name="ReadFile" visibility="public">
+                  
+            <ownedParameter xmi:id="_b1ll6OoQEe6ATMmk_xfHhw" name="file_path" isUnique="false">
+                        
+                <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                        
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b1ll6eoQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b1ll6uoQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_b1ll6-oQEe6ATMmk_xfHhw" value=""/>
+                      
+            </ownedParameter>
+                  
+            <ownedParameter xmi:id="_b1ll7OoQEe6ATMmk_xfHhw" isUnique="false" direction="return">
+                        
+                <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                        
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b1ll7eoQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b1ll7uoQEe6ATMmk_xfHhw" value="1"/>
+                        
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_b1ll7-oQEe6ATMmk_xfHhw" value=""/>
+                      
+            </ownedParameter>
+                
+        </ownedOperation>
+          
+    </packagedElement>
+      
+    <packagedElement xmi:type="uml:Association" xmi:id="_b1ll8OoQEe6ATMmk_xfHhw" memberEnd="_b1ll5eoQEe6ATMmk_xfHhw _b1ll8eoQEe6ATMmk_xfHhw">
+            
+        <ownedEnd xmi:type="uml:Property" xmi:id="_b1ll8eoQEe6ATMmk_xfHhw" visibility="public" type="_b1ll5OoQEe6ATMmk_xfHhw" isUnique="false" association="_b1ll8OoQEe6ATMmk_xfHhw"/>
+          
+    </packagedElement>
+      
+    <packagedElement xmi:type="uml:Class" xmi:id="_b1ll8uoQEe6ATMmk_xfHhw" name="Img">
+            
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_b1ll8-oQEe6ATMmk_xfHhw" name="SavedImage" visibility="public" isUnique="false">
+                  
+            <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                
+        </ownedAttribute>
+          
+    </packagedElement>
+      
+    <packagedElement xmi:type="uml:Class" xmi:id="_b1ll9OoQEe6ATMmk_xfHhw" name="Jpg">
+            
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_b1ll9eoQEe6ATMmk_xfHhw" name="SavedImage" visibility="public" isUnique="false">
+                  
+            <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                
+        </ownedAttribute>
+          
+    </packagedElement>
+    
+</uml:Model>

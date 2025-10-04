@@ -1,0 +1,5 @@
+FROM alpine:3.17 AS system
+
+RUN apk update && \
+    apk add --no-cache go git && \
+    rm -rf /var/cache/apk/*
