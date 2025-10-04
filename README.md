@@ -30,7 +30,7 @@
 - **TCP обертка над UDP**  
   `networks/TCP`
   [Открыть папку](./networks/TCP/)
-- **Небольшой проект на python - Cryptographer/Decryptor**  
+- **Проект на python - Cryptographer/Decryptor**  
   `python prac/cryptographer-decryptor`
   [Открыть папку](./python%20prac/cryptographer-decryptor/)
 - **Теория формальных языков - Earley Parser**  
